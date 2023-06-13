@@ -16,5 +16,8 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }} -latr
+      - name: List files in filez folder
+        run: |
+          ls ${{ github.workspace }}/filez/* -latr          
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
